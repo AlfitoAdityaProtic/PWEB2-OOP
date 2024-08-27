@@ -291,4 +291,4 @@ Outputnya adalah : <br><br>
 
 ![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/abstraction.png?raw=true)
 
-# JobSheet 2 End
+# JobSheet 2 END
