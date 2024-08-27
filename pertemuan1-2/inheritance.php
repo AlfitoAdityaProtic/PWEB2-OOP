@@ -1,6 +1,7 @@
 <?php 
 // membuat class Produk
 class Produk{
+    // membuat atribut menjadi protected agar dapat digunakan di class turunannya
     protected $nama;
     public function __construct($nama){
         $this->nama = $nama;

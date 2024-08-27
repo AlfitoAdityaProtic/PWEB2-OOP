@@ -1,5 +1,7 @@
 <?php 
+// membuat class person
 class Person{
+    // membuat property name dengan visibility private
     private $name;
     public function __construct(string $name){
         $this->name = $name;
@@ -102,7 +104,33 @@ class Mahasiswa extends Person{
     }
 }
 abstract class Jurnal{
-    
+    protected $judul;
+    protected $penulis;
+    public function __construct(string $judul, Person $penulis){
+        $this->judul = $judul;
+        $this->penulis = $penulis;
+    }
+    abstract function getJurnal();
+}
+class JurnalDosen extends Jurnal{
+    public function __construct($judul, Dosen $penulis){
+        parent::__construct($judul, $penulis);
+    }
+    public function getJurnal(){
+        return "Judul jurnal: " . $this->judul . "<br>" .
+                "Penulis jurnal: " . $this->penulis->getName() . "<br>" .
+                "Dengan " . $this->penulis->getNidn(); 
+    }
+}
+class JurnalMahasiswa extends Jurnal {
+    public function __construct(string $judul, Mahasiswa $penulis){
+        parent::__construct($judul, $penulis);
+    }
+    public function getJurnal(){
+        return "Judul jurnal: " . $this->judul . "<br>" .
+                "Penulis jurnal: " . $this->penulis->getName() . "<br>" .
+                "Dengan " . $this->penulis->getNim();
+    }
 }
 
 // instansiasi objek dari class Person
@@ -139,7 +167,7 @@ echo $course2->getCourseDetails() . "<br>"; //menampilkan data dari methode getC
 $dosen = new Dosen("Prih Diantono Abda`u", 123456789);
 
 // mengambil data nama dan nidn dari class dosen menggunakan setter
-echo $dosen->setName("bikra") . "<br>";
+echo $dosen->setName("dendi") . "<br>";
 echo $dosen->setNidn(26) . "<br>";
 
 // menampilkan data nama dan nidn dari class Dosen menggunakan getter
@@ -157,4 +185,12 @@ echo $mahasiswa->setNim(230202006) . "<br>";
 // menampilkan data dari class Mahasiswa menggunakan getter
 echo $mahasiswa->getNim() . "<br>";
 echo $mahasiswa->getName() . "<br>";
-echo $mahasiswa->getRole() . "<br>";
+echo $mahasiswa->getRole() . "<br><br>";
+
+// instansiasi objek dari class jurnal dosen
+$jurnal  = new JurnalDosen("Implementasi Pemrograman Web", $dosen);
+echo $jurnal->getJurnal(). "<br><br>"; //menampilkan hasil
+
+// instansiasi objek dari class jurnal mahasiswa
+$jurnal2 = new JurnalMahasiswa("Pembuatan Kerangka bij Besi", $mahasiswa);
+echo $jurnal2->getJurnal();
