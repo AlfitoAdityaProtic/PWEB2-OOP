@@ -3,12 +3,19 @@
 repositori ini dibuat untuk memenuhi tugas perkuliahan Praktikum Web 2 yang berisi JobSheet 1 hingga Jobsheet 3. <br>
 Pemrograman Berorientasi Objek (OOP) adalah paradigma pemrograman yang mengorganisasi kode menjadi objek-objek. 
 Objek ini merepresentasikan entitas dunia nyata, seperti mobil, orang, atau bahkan konsep abstrak seperti akun bank. 
-Setiap objek memiliki atribut (data) dan metode (fungsi) yang terkait. pada repositori ini akan menunjukan konsep inti dari OOP termasuk Enkapsulasi, Pewarisan, Polimorfisme, dan Abstraksi.
-code-code dibawah ini merupakan code yang sudah saya buat selama jam perkuliahan. bisa di cek kembali pada folder folder diatas
+Setiap objek memiliki atribut (data) dan metode (fungsi) yang terkait. 
 <hr>
 
 # Jobsheet 1 Start
 
+
+
+# JobSheet 1 END
+
+# JobSheet 2 Start
+## Introduction
+pada repositori ini akan menunjukan konsep inti dari OOP termasuk Enkapsulasi, Pewarisan, Polimorfisme, dan Abstraksi.
+code-code dibawah ini merupakan code yang sudah saya buat selama jam perkuliahan. bisa di cek kembali pada folder folder diatas
 # Daftar Isi :
 - [Class dan Object](#classAndobject)
 - [Encapsulation](#Encapsulation)
@@ -284,8 +291,4 @@ Outputnya adalah : <br><br>
 
 ![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/abstraction.png?raw=true)
 
-# JobSheet 1 END
-
-# JobSheet 2 Start
-
-# PWEB2-OOP
+# JobSheet 2 End
