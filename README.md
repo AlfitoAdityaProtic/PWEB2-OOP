@@ -381,9 +381,36 @@ Outputnya adalah : <br><br>
 # JobSheet 2 END
 <br>
 
-#JobSheet 3 Start
-pada JobSheet ke 3 kali ini saya diharapkan mampu menerapkan prinsip OOP dalam pemrograman PHP melalui tugas yang mengintegrasikan konsep Inheritance, Polymorphism, Encapsulation dan Abstraction.<br><br>
+# JobSheet 3 Start
+Pada JobSheet ke 3 kali ini saya diharapkan mampu menerapkan prinsip OOP dalam pemrograman PHP melalui tugas yang mengintegrasikan konsep Inheritance, Polymorphism, Encapsulation dan Abstraction.<br><br>
+langkah -langkah pengerjaan yang saya lakukan dengan menerapkan 4 prinsip OOP yang sudah saya sebutkan diatas : <br>
+<h4>1. Inheritance</h4>
+    + Buat kelas Person dengan atribut name dan metode getName().<br>
+    + Buat kelas Student yang mewarisi dari Person dan tambahkan atribut studentID
+serta metode getStudentID().
+<h4>2. Polymorphism</h4>
+    + Buat kelas Teacher yang juga mewarisi dari Person dan tambahkan atribut teacherID.<br>
+    + Override metode getName() di kelas Student dan Teacher untuk menampilkan format berbeda.
+<h4>3. Encapsulation</h4>
+    + Ubah atribut name dan studentID dalam kelas Student menjadi private.<br>
+    + Tambahkan metode setter dan getter untuk mengakses dan mengubah nilai atribut name dan studentID.
+<h4>4. Abstraction</h4>
+    + Buat kelas abstrak Course dengan metode abstrak getCourseDetails().<br>
+    + Buat kelas OnlineCourse dan OfflineCourse yang mengimplementasikan getCourseDetails() untuk memberikan detail yang berbeda.
+<h4>Tugas : </h4>
+- Implementasikan kelas Person sebagai induk dari Dosen dan Mahasiswa.
+- Gunakan konsep Inheritance untuk membuat hierarki kelas yang memungkinkan
+Dosen dan Mahasiswa memiliki atribut dan metode yang sesuai dengan perannya.
+- Terapkan Polymorphism dengan membuat metode getRole() di kelas Person dan
+override metode ini di kelas Dosen dan Mahasiswa untuk menampilkan peran yang
+berbeda.
+- Gunakan Encapsulation untuk melindungi atribut nidn di kelas Dosen dan nim di
+kelas Mahasiswa.
+- Buat kelas abstrak Jurnal dan implementasikan konsep Abstraction dengan
+membuat kelas turunan JurnalDosen dan JurnalMahasiswa yang masing-masing
+memiliki cara tersendiri untuk mengelola pengajuan jurnal.
 
+Untuk urutan pengerjaannya sudah saya urutkan dari atas kebawah, bisa dilihat di code yang sudah saya cantumkan dibawah ini.<br>
 Contoh Code yang sudah saya buat : <br>
 
 ```php
