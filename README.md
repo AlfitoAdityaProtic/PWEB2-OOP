@@ -623,7 +623,7 @@ echo $jurnal->getJurnal(). "<br><br>"; //menampilkan hasil
 $jurnal2 = new JurnalMahasiswa("Pembuatan Kerangka bij Besi", $mahasiswa);
 echo $jurnal2->getJurnal();
 ```
-<br><br>
+<br>
 
 Output dari Code yang sudah Saya Buat : <br><br>
 
