@@ -81,6 +81,10 @@ class OfflineCourse extends Course{
         return "Offline Course akan dilakukan secara Luring" . "<br>";
     }
 }
+
+// ini adalah batas antara JobSheet dan Tugas 3
+
+// Tugas Start
 // membuat kelas Dosen yang mewarisi kelas Person
 class Dosen extends Person{
     // menambahkan properti nidn dengan visibilitas private
@@ -171,6 +175,7 @@ class JurnalMahasiswa extends Jurnal {
                 "Dengan " . $this->penulis->getNim();
     }
 }
+// Tugas End
 
 // instansiasi objek dari class Person
 $name = new Person("Alfito Dwi Aditya");
@@ -202,6 +207,7 @@ echo $course->getCourseDetails() . "<br>"; //menampilkan data dari methode getCo
 $course2 = new OfflineCourse();
 echo $course2->getCourseDetails() . "<br>"; //menampilkan data dari methode getCourseDetails dari class OfflineCourse
 
+// Instansiasi Tugas Start
 // intansiasi objek dari class Dosen
 $dosen = new Dosen("Prih Diantono Abda`u", 123456789);
 
@@ -233,3 +239,5 @@ echo $jurnal->getJurnal(). "<br><br>"; //menampilkan hasil
 // instansiasi objek dari class jurnal mahasiswa
 $jurnal2 = new JurnalMahasiswa("Pembuatan Kerangka bij Besi", $mahasiswa);
 echo $jurnal2->getJurnal();
+
+// Instansiasi Tugas End
