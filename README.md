@@ -93,7 +93,7 @@ $dosen = new Dosen("Prih Diantono Abda`u", "22222222", "PWEB 2");
 echo $dosen->tampilkanDosen();
 ```
 <br><br>
-Output dari Code yang saya buat diatas : <br>
+Output dari Code yang saya buat diatas : <br><br>
 ![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_1/mahasiswa%26dosen.png?raw=true)
 
 
