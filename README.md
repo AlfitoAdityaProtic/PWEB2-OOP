@@ -379,7 +379,7 @@ Outputnya adalah : <br><br>
 ![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/abstraction.png?raw=true)
 
 # JobSheet 2 END
-<br><br>
+<br>
 
 #JobSheet 3 Start
 pada JobSheet ke 3 kali ini saya diharapkan mampu menerapkan prinsip OOP dalam pemrograman PHP melalui tugas yang mengintegrasikan konsep Inheritance, Polymorphism, Encapsulation dan Abstraction.<br><br>
