@@ -21,5 +21,5 @@ class Mahasiswa
     }
 }
 // instansiasi Objek
-$mahasiswa = new Mahasiswa("Alfito Dwi Aditya", "230202002", "Jurusan Komputer Dan Bisnis");
+$mahasiswa = new Mahasiswa("Alfito Dwi Aditya",  "230202002", "Jurusan Komputer Dan Bisnis");
 echo $mahasiswa->tampilkanData();
