@@ -398,17 +398,17 @@ serta metode getStudentID().
     + Buat kelas abstrak Course dengan metode abstrak getCourseDetails().<br>
     + Buat kelas OnlineCourse dan OfflineCourse yang mengimplementasikan getCourseDetails() untuk memberikan detail yang berbeda.
 <h4>Tugas : </h4>
-- Implementasikan kelas Person sebagai induk dari Dosen dan Mahasiswa.
+- Implementasikan kelas Person sebagai induk dari Dosen dan Mahasiswa.<br>
 - Gunakan konsep Inheritance untuk membuat hierarki kelas yang memungkinkan
-Dosen dan Mahasiswa memiliki atribut dan metode yang sesuai dengan perannya.
+Dosen dan Mahasiswa memiliki atribut dan metode yang sesuai dengan perannya.<br>
 - Terapkan Polymorphism dengan membuat metode getRole() di kelas Person dan
 override metode ini di kelas Dosen dan Mahasiswa untuk menampilkan peran yang
-berbeda.
+berbeda.<br>
 - Gunakan Encapsulation untuk melindungi atribut nidn di kelas Dosen dan nim di
-kelas Mahasiswa.
+kelas Mahasiswa.<br>
 - Buat kelas abstrak Jurnal dan implementasikan konsep Abstraction dengan
 membuat kelas turunan JurnalDosen dan JurnalMahasiswa yang masing-masing
-memiliki cara tersendiri untuk mengelola pengajuan jurnal.
+memiliki cara tersendiri untuk mengelola pengajuan jurnal.<br><br>
 
 Untuk urutan pengerjaannya sudah saya urutkan dari atas kebawah, bisa dilihat di code yang sudah saya cantumkan dibawah ini.<br>
 Contoh Code yang sudah saya buat : <br>
