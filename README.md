@@ -51,7 +51,7 @@ echo $mahasiswa->tampilkanData();
 ```
 
 Dan ini adalah outputnya : <br><br>
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Class%20and%20Object.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Class%20and%20Object.png?raw=true)
 
 ## 2. Encapsulation
 Encapsulation dalam OOP PHP adalah konsep yang menyembunyikan detail internal suatu objek dan hanya membiarkan akses ke data melalui metode yang ditentukan. 
@@ -136,7 +136,7 @@ $mahasiswa->tampilkanData();
 ```
 Berikut adalah outputnya : <br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Encapsulation.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Encapsulation.png?raw=true)
 
 <br>
 
@@ -186,7 +186,7 @@ echo $dosen->getmataKuliah();
 <br>
 Berikut adalah output dari kode di atas: <br><br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Inheritance.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Inheritance.png?raw=true)
 <br>
 
 ## 4. Polymorphism
@@ -236,7 +236,7 @@ $aksesFitur->aksesFitur();
 <br>
 Outputnya adalah : <br><br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Polymorphisme.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Polymorphisme.png?raw=true)
 
 <br>
 
@@ -282,7 +282,7 @@ echo $b->aksesFitur();
 <br>
 Outputnya adalah : <br><br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/abstraction.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/abstraction.png?raw=true)
 
 # JobSheet 1 END
 
