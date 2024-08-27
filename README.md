@@ -3,12 +3,106 @@
 repositori ini dibuat untuk memenuhi tugas perkuliahan Praktikum Web 2 yang berisi JobSheet 1 hingga Jobsheet 3. <br>
 Pemrograman Berorientasi Objek (OOP) adalah paradigma pemrograman yang mengorganisasi kode menjadi objek-objek. 
 Objek ini merepresentasikan entitas dunia nyata, seperti mobil, orang, atau bahkan konsep abstrak seperti akun bank. 
-Setiap objek memiliki atribut (data) dan metode (fungsi) yang terkait. pada repositori ini akan menunjukan konsep inti dari OOP termasuk Enkapsulasi, Pewarisan, Polimorfisme, dan Abstraksi.
-code-code dibawah ini merupakan code yang sudah saya buat selama jam perkuliahan. bisa di cek kembali pada folder folder diatas
+Setiap objek memiliki atribut (data) dan metode (fungsi) yang terkait. 
 <hr>
 
 # Jobsheet 1 Start
+Pada JobSheet 1 ini, saya membuat class mahasiswa, dan class dosen yang diharuskan menampilkan nama, nim, jurusan, nip dan mata kuliah serta update jurusan dan update nim menggunakan methode yang di perintahkan. <br><br>
+Contoh Code yang saya Buat :
+```php
+<?php
+// membuat class Mahasiswa
+class Mahasiswa
+{
+    // membuat atribut nama, nim dan jurusan dalam class mahasiswa
+    private $nama;
+    private $nim;
+    private $jurusan;
 
+    // membuat construtor untuk method mahasiswa
+    public function __construct($nama = "mikel", $nim = "230202016", $jurusan = "JTM")
+    {
+        $this->nama = $nama;
+        $this->nim = $nim;
+        $this->jurusan = $jurusan;
+    }
+    // method yang berfungsi untuk menampilkan data mahasiswa yang sudah dibuat
+    public function tampilkanData()
+    {
+        return "Nama: $this->nama" . "<br>" .
+            "NIM: $this->nim" . "<br>" .
+            "Jurusan: $this->jurusan";
+    }
+    // membuat method update jurusan untuk mengubah jurusan yang sudah di tetapkan
+    public function updateJurusan($jurusan)
+    {
+        return $this->jurusan = $jurusan;
+    }
+    // membuat method getter untuk atribut nim
+    public function getnim()
+    {
+        return $this->nim;
+    }
+    // membuat method setter untuk atribut nim
+    public function setnim($nim)
+    {
+        $this->nim = $nim;
+    }
+}
+// membuat class Dosen
+class Dosen
+{
+    // membuat atribut atau properties dalam class dosen yang berisi nama, nip dan mata kuliah
+    private $nama;
+    private $nip;
+    private $mataKuliah;
+
+    // membuat construtor agar langsung di eksekusi jika dijalankan
+    public function __construct($nama, $nip, $mataKuliah)
+    {
+        $this->nama = $nama;
+        $this->nip = $nip;
+        $this->mataKuliah = $mataKuliah;
+    }
+    // membuat method tampilkan dosen untuk menampilkan data dari class dosen yang sudah dibuat
+    public function tampilkanDosen()
+    {
+        return "Nama: $this->nama" . "<br>" .
+            "NIP: $this->nip" . "<br>" .
+            "Mata Kuliah: $this->mataKuliah";
+    }
+}
+// instansiasi Objek dari class mahasiswa
+$mahasiswa = new Mahasiswa();
+
+// menampilkan data dari method tampilkanData untuk class mahasiswa
+echo $mahasiswa->tampilkanData();
+echo "<br><br>";
+// mengupdate jurusna dari method updateJurusan
+echo "menampilkan data setelah update jurusan : " . $mahasiswa->updateJurusan("Jurusan Teknik Informatika") . "<br><br>";
+
+// mengubah nim dari method getter dan setter
+$mahasiswa->getnim();
+$mahasiswa->setnim("230202002") . "<br>";
+// menampilkan data yang sudah diubah dalam class mahasiswa
+echo $mahasiswa->tampilkanData() . "<br><br>";
+
+// instansiasi objek dari class dosen
+$dosen = new Dosen("Prih Diantono Abda`u", "22222222", "PWEB 2");
+// menampilkan data dari method tampilkanDosen dalam class dosen
+echo $dosen->tampilkanDosen();
+```
+<br><br>
+Output dari Code yang saya buat diatas : <br><br>
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_1/mahasiswa%26dosen.png?raw=true)
+
+
+# JobSheet 1 END
+
+# JobSheet 2 Start
+## Introduction
+pada repositori ini akan menunjukan konsep inti dari OOP termasuk Enkapsulasi, Pewarisan, Polimorfisme, dan Abstraksi.
+code-code dibawah ini merupakan code yang sudah saya buat selama jam perkuliahan. bisa di cek kembali pada folder folder diatas
 # Daftar Isi :
 - [Class dan Object](#classAndobject)
 - [Encapsulation](#Encapsulation)
@@ -51,7 +145,7 @@ echo $mahasiswa->tampilkanData();
 ```
 
 Dan ini adalah outputnya : <br><br>
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Class%20and%20Object.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Class%20and%20Object.png?raw=true)
 
 ## 2. Encapsulation
 Encapsulation dalam OOP PHP adalah konsep yang menyembunyikan detail internal suatu objek dan hanya membiarkan akses ke data melalui metode yang ditentukan. 
@@ -136,7 +230,7 @@ $mahasiswa->tampilkanData();
 ```
 Berikut adalah outputnya : <br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Encapsulation.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Encapsulation.png?raw=true)
 
 <br>
 
@@ -186,7 +280,7 @@ echo $dosen->getmataKuliah();
 <br>
 Berikut adalah output dari kode di atas: <br><br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Inheritance.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Inheritance.png?raw=true)
 <br>
 
 ## 4. Polymorphism
@@ -236,7 +330,7 @@ $aksesFitur->aksesFitur();
 <br>
 Outputnya adalah : <br><br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/Polymorphisme.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/Polymorphisme.png?raw=true)
 
 <br>
 
@@ -282,10 +376,6 @@ echo $b->aksesFitur();
 <br>
 Outputnya adalah : <br><br>
 
-![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet1/output/abstraction.png?raw=true)
+![alt text](https://github.com/AlfitoAdityaProtic/PWEB2-OOP/blob/main/jobsheet_2/output/abstraction.png?raw=true)
 
-# JobSheet 1 END
-
-# JobSheet 2 Start
-
-# PWEB2-OOP
+# JobSheet 2 END
