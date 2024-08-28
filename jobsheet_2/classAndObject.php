@@ -5,7 +5,7 @@ class Mahasiswa
     // ini adalah atribut atau properties
     public $nama;
     public $nim;
-    public $jurusan;
+    private $jurusan;
 
     // membuat construtor
     public function __construct($nama, $nim, $jurusan)
@@ -22,4 +22,5 @@ class Mahasiswa
 }
 // instansiasi Objek
 $mahasiswa = new Mahasiswa("Alfito Dwi Aditya",  "230202002", "Jurusan Komputer Dan Bisnis");
-echo $mahasiswa->tampilkanData();
+echo $mahasiswa->tampilkanData() . "<br>";
+
