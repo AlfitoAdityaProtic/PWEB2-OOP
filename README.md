@@ -414,7 +414,7 @@ Untuk urutan pengerjaannya sudah saya urutkan dari atas kebawah, bisa dilihat di
 Contoh Code yang sudah saya buat : <br>
 
 ```php
-    <?php 
+  <?php 
 // membuat class person
 class Person{
     // membuat property name dengan visibilitas private
@@ -483,7 +483,6 @@ abstract class Course {
 }
 // membbuat kelas OnlineCourse yang mewarisi kelas Course
 class OnlineCourse extends Course{
-    public function __construct(){}
     // implementasi dari method getCourseDetails untuk kelas OnlineCourse
     public function getCourseDetails(){
         return "Online Course akan dilakukan secara Daring" . "<br>";
@@ -491,12 +490,15 @@ class OnlineCourse extends Course{
 }
 // membuat kelas OfflineCourse yang mewarisi kelas Course
 class OfflineCourse extends Course{
-    public function __construct(){}
     // Implementasi dari method getCourseDetails untuk kelas OfflineCourse 
     public function getCourseDetails(){
         return "Offline Course akan dilakukan secara Luring" . "<br>";
     }
 }
+
+// ini adalah batas antara JobSheet dan Tugas 3
+
+// Tugas Start
 // membuat kelas Dosen yang mewarisi kelas Person
 class Dosen extends Person{
     // menambahkan properti nidn dengan visibilitas private
@@ -587,6 +589,7 @@ class JurnalMahasiswa extends Jurnal {
                 "Dengan " . $this->penulis->getNim();
     }
 }
+// Tugas End
 
 // instansiasi objek dari class Person
 $name = new Person("Alfito Dwi Aditya");
@@ -618,13 +621,12 @@ echo $course->getCourseDetails() . "<br>"; //menampilkan data dari methode getCo
 $course2 = new OfflineCourse();
 echo $course2->getCourseDetails() . "<br>"; //menampilkan data dari methode getCourseDetails dari class OfflineCourse
 
+// Instansiasi Tugas Start
 // intansiasi objek dari class Dosen
 $dosen = new Dosen("Prih Diantono Abda`u", 123456789);
-
 // mengambil data nama dan nidn dari class dosen menggunakan setter
 echo $dosen->setName("dendi") . "<br>";
 echo $dosen->setNidn(26) . "<br>";
-
 // menampilkan data nama dan nidn dari class Dosen menggunakan getter
 echo $dosen->getNidn() . "<br>";
 echo $dosen->getName() . "<br>";
@@ -632,11 +634,9 @@ echo $dosen->getRole() . "<br>";
 
 // instansiasi objek dari class Mahasiswa
 $mahasiswa = new Mahasiswa("Muhammad Alfito", 230202002);
-
 // mengambil data nama dan nim dari class mahasiswa menggunakan setter
 echo $mahasiswa->setName("bikra") . "<br>";
 echo $mahasiswa->setNim(230202006) . "<br>";
-
 // menampilkan data dari class Mahasiswa menggunakan getter
 echo $mahasiswa->getNim() . "<br>";
 echo $mahasiswa->getName() . "<br>";
@@ -649,6 +649,8 @@ echo $jurnal->getJurnal(). "<br><br>"; //menampilkan hasil
 // instansiasi objek dari class jurnal mahasiswa
 $jurnal2 = new JurnalMahasiswa("Pembuatan Kerangka bij Besi", $mahasiswa);
 echo $jurnal2->getJurnal();
+
+// Instansiasi Tugas End
 ```
 <br>
 
